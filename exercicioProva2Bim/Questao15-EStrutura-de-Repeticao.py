@@ -6,7 +6,7 @@ if(n >= 0):
     while (a==True):
         if(n==0):
             print(x)
-        elif:
+        elif(n > 0):
             print(x)
             print(y)
             x = x + y
