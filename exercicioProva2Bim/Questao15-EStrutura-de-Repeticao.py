@@ -1,20 +1,16 @@
-n=eval(input("Digite até que valor será a série de Fibonacci:"))
+n=eval(input("Digite quantos termos terá a série de Fibonacci:"))
 if(n >= 0):
-    a = True
+    t = 0
     x = 0
     y = 1
-    while (a==True):
-        if(n==0):
-            print(x)
-        elif(n > 0):
-            print(x)
+    while (t < n):
+        print(x)
+        x = x + y
+        t = t + 1
+        if(t < n):
             print(y)
-            x = x + y
-            y = x + y
-        if (x > n or y > n):
-            a = False
-        else:
-             a = True
+            y = y + x
+            t = t + 1
+
 else:
     print("O valor não pode ser negativo")
-
